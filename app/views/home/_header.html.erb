@@ -1,2 +1,26 @@
-<%= link_to 'Strona główna', root_path %>
-<%= link_to 'O mnie', home_about_path %>
+<nav class="navbar navbar-default" role="navigation"> 
+    <div class="container"> 
+        <!-- Brand and toggle get grouped for better mobile display --> 
+            <div class="navbar-header"> 
+                <button type="button" class="navbar-toggle collapsed" data- 6 
+                toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+                    <span class="sr-only">Toggle navigation</span> 
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span> 
+                </button> 
+                <%= link_to 'Obrazkowo', root_path, class: 'navbar-brand' %>
+                <!--<a class="navbar-brand" href="#">Obrazkowo</a> -->
+            </div> 
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                 <ul class="nav navbar-nav navbar-right"> 
+                     <li><%= link_to 'Strona główna', root_path %></li>
+                     <li><%= link_to 'O mnie', home_about_path %></li>
+                 </ul>
+            </div><!-- /.navbar-collapse --> 
+    </div><!-- /.container-fluid --> 
+</nav>
+<!--<%= link_to 'Strona główna', root_path %>-->
+<!--<%= link_to 'O mnie', home_about_path %>-->
