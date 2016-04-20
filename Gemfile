@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'devise', '~> 4.0'
 
+gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-4-x'
 
 group :development, :test do
   gem 'byebug'
