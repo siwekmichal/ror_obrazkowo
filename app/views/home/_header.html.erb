@@ -18,6 +18,15 @@
                  <ul class="nav navbar-nav navbar-right"> 
                      <li><%= link_to 'Strona główna', root_path %></li>
                      <li><%= link_to 'O mnie', home_about_path %></li>
+                     
+                     <% if user_signed_in? %>
+                         <li><%= link_to 'Edycja profilu', edit_user_registration_path %></li>
+                         <li><%= link_to 'Wylogowywanie', destroy_user_session_path, method: :delete %></li>
+                     <% else %>
+                         <li><%= link_to 'Logowanie', new_user_session_path %></li>
+                         <li><%= link_to 'Rejestracja', new_user_registration_path %></li>
+                     <% end %>
+                     
                  </ul>
             </div><!-- /.navbar-collapse --> 
     </div><!-- /.container-fluid --> 
