@@ -13,7 +13,8 @@ gem 'devise', '~> 4.0'
 
 gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-4-x'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
-gem 'aws-sdk', '~> 2.2', '>= 2.2.35'
+; #gem 'aws-sdk', '~> 2.2', '>= 2.2.35'
+gem 'aws-sdk', '< 2.0'
 
 group :development, :test do
   gem 'byebug'
